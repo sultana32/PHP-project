@@ -1,0 +1,91 @@
+#navigation { font-size:0.99em; width:150px; 
+position:absolute;
+}
+#navigation ul { margin:0px; padding:0px; }
+#navigation li { list-style: none; }
+ 
+ul.top-level { background:#009ACD; }
+ul.top-level li {
+ border-bottom: #fff solid;
+ border-top: #fff solid;
+ border-width: 1px;
+}
+ul.top-level li:active{
+text-decoration:underline;
+ background: #87CEFA;
+
+}
+ 
+#navigation a {
+ color: #fff;
+ font-weight:bold;
+ cursor: pointer;
+ display:block;
+ height:35px;
+ line-height: 35px;
+ text-indent: 15px;
+ text-decoration:bold;
+ width:100%;
+}
+ 
+#navigation a:hover{
+ text-decoration:underline;
+ background: #87CEFA;
+}
+#navigation a:active{
+ text-decoration:underline;
+ background: #87CEFA;
+}
+
+ 
+#navigation li:hover {
+ background: #87CEFA;
+ position: relative;
+}
+
+#navigation li:active {
+ background: #87CEFA;
+ position: relative;
+}
+
+ul.sub-level {
+    display: none;
+}
+ 
+li:hover .sub-level {
+    background: #00B2EE;
+    border: #fff solid;
+    border-width: 1px;
+	
+    display: block;
+    position: absolute;
+    left: 75px;
+    top: 5px;
+}
+ 
+ul.sub-level li {
+   
+    float:left;
+    width:150px;
+	border-bottom: #fff solid;
+ border-top: #fff solid;
+}
+
+/*Seconda Level*/
+#navigation .sub-level {
+    background: #00B2EE;
+}
+ 
+/*Third Level*/
+#navigation .sub-level .sub-level {
+    background: #09C;
+}
+
+/*RESET STYLES*/
+li:hover .sub-level .sub-level {
+    display:none;
+}
+ 
+.sub-level li:hover .sub-level {
+    display:block;
+}
